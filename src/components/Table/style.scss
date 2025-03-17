@@ -1,0 +1,29 @@
+@import 'src/assets/styles/basic.scss';
+
+.table {
+  margin-bottom: 0;
+
+  tbody {
+    tr {
+      cursor: pointer;
+    }
+  }
+
+  button + button {
+    margin-left: 6px;
+  }
+
+  .btn-text {
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: underline;
+    user-select: none;
+  }
+
+  .btn-text:not(caption) {
+    color: $primary;
+  }
+}
+
+[data-bs-theme='dark'] {
+}

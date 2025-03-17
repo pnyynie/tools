@@ -1,0 +1,13 @@
+@import 'src/assets/styles/basic.scss';
+
+.sidebar {
+  flex-shrink: 0;
+  width: 230px;
+  min-height: 100%;
+  background-color: $dark;
+  transition: width 0.1s;
+
+  &.sidebar-0 {
+    width: 60px;
+  }
+}

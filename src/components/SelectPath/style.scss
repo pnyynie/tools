@@ -1,0 +1,36 @@
+.select-path {
+  display: flex;
+  position: relative;
+
+  input {
+    margin-right: 46px;
+  }
+
+  input[disabled] {
+    color: inherit;
+  }
+
+  .icon-button {
+    position: absolute;
+    top: 1px;
+    right: 1px;
+    width: 46px;
+    height: 36px;
+    line-height: 36px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    background: transparent !important;
+    border-color: transparent !important;
+    box-shadow: none !important;
+  }
+
+  .select-path-mc {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 5;
+    cursor: pointer;
+  }
+}

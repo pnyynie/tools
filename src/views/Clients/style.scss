@@ -1,0 +1,37 @@
+@import 'src/assets/styles/basic.scss';
+$spacing: 20px;
+
+.page-wrapper.clients {
+  min-width: 100%;
+  min-height: 100%;
+  padding: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+
+  .panel {
+    margin-right: $spacing;
+    margin-bottom: $spacing;
+  }
+
+  .list-group-item {
+    cursor: pointer;
+  }
+
+  .btn-text + .btn-text {
+    margin-left: 8px;
+  }
+
+  .search-input {
+    width: 168px;
+    height: 26px;
+    font-size: 12px;
+    border-radius: 3px;
+    &:focus {
+      box-shadow: none;
+    }
+    & + * {
+      margin-left: auto;
+    }
+  }
+}

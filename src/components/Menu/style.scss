@@ -1,0 +1,41 @@
+@import 'src/assets/styles/basic.scss';
+
+.menu {
+  color: #fff;
+
+  ul {
+    padding-top: 20px;
+    padding-left: 22px;
+    margin-bottom: 0;
+    list-style: none;
+  }
+
+  li {
+    line-height: 35px;
+    white-space: nowrap;
+    user-select: none;
+    cursor: pointer;
+
+    svg {
+      margin-right: 12px;
+    }
+  }
+
+  li.active svg {
+    color: $primary;
+  }
+
+  &.menu-0 {
+    li {
+      svg {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+[data-bs-theme='dark'] {
+  .menu {
+    color: inherit;
+  }
+}

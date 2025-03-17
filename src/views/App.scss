@@ -1,0 +1,30 @@
+.app {
+  position: relative;
+  min-height: 100vh;
+}
+
+.app-container {
+  display: flex;
+  padding-top: 60px;
+  height: 100vh;
+}
+
+.app-container-content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.content-wrapper {
+  flex-grow: 1;
+  position: relative;
+  overflow: auto;
+
+  .content-inner-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+}

@@ -1,0 +1,13 @@
+@import 'src/assets/styles/basic.scss';
+
+.icon-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  user-select: none;
+
+  &:hover {
+    color: $primary;
+  }
+}

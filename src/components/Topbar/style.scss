@@ -1,0 +1,67 @@
+@import 'src/assets/styles/basic.scss';
+
+$baseLength: 60px;
+$backgroundColor: #ffffff;
+
+.topbar {
+  z-index: 1050;
+  height: $baseLength;
+  line-height: $baseLength;
+  background-color: $backgroundColor;
+  display: flex;
+  justify-content: space-between;
+
+  .navbar-branding {
+    flex-shrink: 0;
+    position: relative;
+    width: 230px;
+    padding: 0 20px;
+
+    .logo {
+      height: 100%;
+    }
+
+    .bars-wrap {
+      position: absolute;
+      width: $baseLength;
+      height: 100%;
+      top: 50%;
+      right: 0;
+      transform: translateY(-50%);
+      text-align: center;
+      cursor: pointer;
+      user-select: none;
+
+      svg {
+        line-height: $baseLength;
+      }
+    }
+  }
+
+  .navbar-branding.status-0 {
+    width: $baseLength;
+    height: $baseLength;
+
+    .logo {
+      display: none;
+    }
+
+    svg {
+      transform: rotate(180deg);
+    }
+  }
+
+  .others {
+    width: auto;
+    padding: 0 20px;
+    height: $baseLength;
+    display: flex;
+    align-items: center;
+  }
+}
+
+[data-bs-theme='dark'] {
+  .topbar {
+    background-color: $dark;
+  }
+}

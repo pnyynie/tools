@@ -1,0 +1,6 @@
+@import './theme.scss';
+
+[data-bs-theme='dark'] {
+  color: $gray-400;
+  background-color: $dark;
+}
